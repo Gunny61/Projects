@@ -1,0 +1,1 @@
+Run main.py, the emails will be automatically sent to students on clicking send roll no wise marksheet.
