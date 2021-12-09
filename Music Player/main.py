@@ -18,7 +18,10 @@ def Play_this():
     return
 def Play():
     this = songs.curselection()
-    this = this[0]
+    try:
+        this = this[0]
+    except IndexError:
+        print("***PLEASE SELECT A SONG!***")
     song_is = songs.get(ACTIVE)
     songs.select_set(this)
     mixer.music.load(song_is)
